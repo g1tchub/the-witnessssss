@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111416" />
+    <title>The Witnessssss</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span id="levelKicker">Level 1</span>
+          <h1>The Witnessssss</h1>
+        </div>
+
+        <button class="icon-button" id="resetButton" type="button" aria-label="Reset level" title="Reset level">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.75 9.25A7.75 7.75 0 1 1 3.9 15.7" />
+            <path d="M4.75 4.75v4.5h4.5" />
+          </svg>
+        </button>
+      </header>
+
+      <nav class="level-strip" aria-label="Levels">
+        <button class="level-button is-active" type="button" data-level="0" aria-current="true">
+          <span>1</span>
+          <small>3</small>
+        </button>
+        <button class="level-button" type="button" data-level="1">
+          <span>2</span>
+          <small>4</small>
+        </button>
+        <button class="level-button" type="button" data-level="2">
+          <span>3</span>
+          <small>5</small>
+        </button>
+      </nav>
+
+      <section class="play-area" aria-label="Game board">
+        <canvas id="gameCanvas" aria-label="The Witnessssss puzzle board"></canvas>
+
+        <div class="clear-panel" id="clearPanel" hidden>
+          <p id="clearTitle">Congratulations!</p>
+          <button class="primary-button" id="nextButton" type="button">Next level</button>
+        </div>
+      </section>
+
+      <footer class="meta-bar">
+        <div>
+          <span>Pairs</span>
+          <strong id="pairCounter">0 / 3</strong>
+        </div>
+        <div>
+          <span>Coverage</span>
+          <strong id="coverageCounter">0%</strong>
+        </div>
+      </footer>
+
+      <section class="prize-screen" id="prizeScreen" hidden aria-label="Prize">
+        <div class="prize-content">
+          <p>Your prize is....</p>
+          <h2>a drink!</h2>
+          <img id="prizeFace" src="assets/head.png" alt="Prize face" />
+          <button class="primary-button" id="playAgainButton" type="button">Play again</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js" defer></script>
+  </body>
+</html>
