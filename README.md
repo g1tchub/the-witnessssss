@@ -2,9 +2,9 @@
 
 A static mobile-friendly Flow-style puzzle game with three levels:
 
-- Level 1: 3 colors on a 6 by 6 grid
-- Level 2: 4 colors on a 7 by 7 grid
-- Level 3: 5 colors on an 8 by 8 grid
+- Level 1: 4 colors on a 6 by 6 grid
+- Level 2: 5 colors on a 7 by 7 grid
+- Level 3: 6 colors on an 8 by 8 grid
 
 The game looks for the real snake-head image at `assets/head.png`. Put the friend's face image there and it will be drawn unchanged as the active or completed head. The included `assets/head.svg` is only a fallback while that file is missing.
 

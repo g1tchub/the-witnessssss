@@ -22,34 +22,38 @@ const COLORS = {
   amber: "#f2b84b",
   violet: "#7b61ff",
   lime: "#73b84a",
+  azure: "#2f80ed",
 };
 
 const LEVELS = [
   {
     size: 6,
     pairs: [
-      { id: "coral", color: COLORS.coral, endpoints: [[0, 0], [4, 5]] },
-      { id: "teal", color: COLORS.teal, endpoints: [[3, 5], [4, 1]] },
-      { id: "amber", color: COLORS.amber, endpoints: [[4, 2], [2, 3]] },
+      { id: "coral", color: COLORS.coral, endpoints: [[2, 5], [5, 0]] },
+      { id: "teal", color: COLORS.teal, endpoints: [[4, 0], [0, 5]] },
+      { id: "amber", color: COLORS.amber, endpoints: [[0, 4], [3, 2]] },
+      { id: "violet", color: COLORS.violet, endpoints: [[3, 3], [1, 1]] },
     ],
   },
   {
     size: 7,
     pairs: [
-      { id: "coral", color: COLORS.coral, endpoints: [[0, 0], [6, 6]] },
-      { id: "teal", color: COLORS.teal, endpoints: [[5, 6], [1, 1]] },
-      { id: "amber", color: COLORS.amber, endpoints: [[2, 1], [1, 5]] },
-      { id: "violet", color: COLORS.violet, endpoints: [[1, 4], [3, 3]] },
+      { id: "coral", color: COLORS.coral, endpoints: [[2, 2], [6, 5]] },
+      { id: "teal", color: COLORS.teal, endpoints: [[6, 6], [0, 1]] },
+      { id: "amber", color: COLORS.amber, endpoints: [[0, 0], [2, 4]] },
+      { id: "violet", color: COLORS.violet, endpoints: [[1, 4], [4, 1]] },
+      { id: "lime", color: COLORS.lime, endpoints: [[5, 1], [4, 4]] },
     ],
   },
   {
     size: 8,
     pairs: [
-      { id: "coral", color: COLORS.coral, endpoints: [[0, 0], [7, 5]] },
-      { id: "teal", color: COLORS.teal, endpoints: [[7, 6], [0, 3]] },
-      { id: "amber", color: COLORS.amber, endpoints: [[0, 2], [6, 6]] },
-      { id: "violet", color: COLORS.violet, endpoints: [[5, 6], [5, 2]] },
-      { id: "lime", color: COLORS.lime, endpoints: [[5, 3], [3, 4]] },
+      { id: "coral", color: COLORS.coral, endpoints: [[0, 0], [3, 3]] },
+      { id: "teal", color: COLORS.teal, endpoints: [[3, 2], [7, 0]] },
+      { id: "amber", color: COLORS.amber, endpoints: [[7, 1], [5, 3]] },
+      { id: "violet", color: COLORS.violet, endpoints: [[5, 2], [1, 5]] },
+      { id: "lime", color: COLORS.lime, endpoints: [[1, 4], [5, 7]] },
+      { id: "azure", color: COLORS.azure, endpoints: [[5, 6], [7, 4]] },
     ],
   },
 ];
