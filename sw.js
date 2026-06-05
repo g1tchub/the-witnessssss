@@ -1,4 +1,4 @@
-const CACHE_NAME = "the-witnessssss-v1";
+const CACHE_NAME = "the-witnessssss-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -6,9 +6,7 @@ const APP_SHELL = [
   "./game.js",
   "./manifest.webmanifest",
   "./assets/head.png",
-  "./assets/head.svg",
-  "./assets/icon-192.png",
-  "./assets/icon-512.png"
+  "./assets/head.svg"
 ];
 
 self.addEventListener("install", (event) => {
